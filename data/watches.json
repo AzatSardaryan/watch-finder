@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "brand": "Rolex",
+    "model": "Submariner",
+    "price": 9500,
+    "image": "/images/rolex.jpg",
+    "description": "The iconic diving watch."
+  },
+  {
+    "id": "2",
+    "brand": "Omega",
+    "model": "Speedmaster",
+    "price": 6200,
+    "image": "/images/omega.jpg",
+    "description": "The moon watch."
+  },
+  {
+    "id": "3",
+    "brand": "Casio",
+    "model": "G-Shock",
+    "price": 150,
+    "image": "/images/casio.jpg",
+    "description": "Tough and reliable."
+  }
+]
