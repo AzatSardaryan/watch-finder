@@ -1,0 +1,47 @@
+/* WatchDetails.module.css */
+
+.wrapper {
+  /* 1 column, centred block */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centres image and text */
+  gap: 1.75rem;
+
+  max-width: 640px; /* keep it from stretching too wide */
+  margin-inline: auto; /* centres the whole block */
+  padding: clamp(1rem, 5vw, 2.5rem);
+}
+
+/* image */
+.imgBox {
+  width: 100%;
+}
+.img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 8px 26px rgb(0 0 0 / 0.12);
+}
+
+/* text */
+.info {
+  text-align: center; /* centre copy under the image */
+}
+.info h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.75rem;
+  line-height: 1.2;
+}
+.price {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin: 0 0 1rem;
+}
+.desc {
+  max-width: 52ch; /* comfortable reading width */
+  color: var(--color-text-muted);
+  margin-inline: auto;
+  line-height: 1.55;
+}
