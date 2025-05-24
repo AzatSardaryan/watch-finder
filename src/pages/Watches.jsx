@@ -5,7 +5,7 @@ import styles from "./Watches.module.css";
 import WatchFilter from "../components/WatchFilter.jsx";
 import { useSearchParams } from "react-router-dom";
 
-function Watches() {
+export default function Watches() {
   const [watches, setWatches] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -34,6 +34,8 @@ function Watches() {
   const brand = searchParams.get("brand");
   const query = searchParams.get("q")?.toLowerCase() || "";
 
+  // If brand does not exist, then matchBrand is set to true
+  // meaning the filter won’t exclude any watches based on brand.
   const filteredWatches = watches.filter((watch) => {
     const matchBrand = brand
       ? watch.brand.toLowerCase() === brand.toLowerCase()
@@ -47,7 +49,6 @@ function Watches() {
   return (
     <>
       <WatchFilter />
-
       {filteredWatches.length === 0 ? (
         <p className={styles.state}>No watches found for your filters.</p>
       ) : (
@@ -62,5 +63,3 @@ function Watches() {
     </>
   );
 }
-
-export default Watches;

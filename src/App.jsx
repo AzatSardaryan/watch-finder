@@ -5,7 +5,7 @@ import Watches from "./pages/Watches.jsx";
 import "./App.css";
 import WatchDetails from "./components/WatchDetails.jsx";
 
-function App() {
+export default function App() {
   return (
     <Routes>
       {/*  /  */}
@@ -26,5 +26,3 @@ function App() {
     </Routes>
   );
 }
-
-export default App;

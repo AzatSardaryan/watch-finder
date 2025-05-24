@@ -2,7 +2,7 @@ import { useSearchParams } from "react-router-dom";
 import styles from "./WatchFilter.module.css";
 import { useState, useEffect, useCallback } from "react";
 
-function WatchFilter() {
+export default function WatchFilter() {
   const [searchParams, setSearchParams] = useSearchParams();
   const [searchInput, setSearchInput] = useState(searchParams.get("q") || "");
 
@@ -53,5 +53,3 @@ function WatchFilter() {
     </div>
   );
 }
-
-export default WatchFilter;

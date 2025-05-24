@@ -1,5 +1,5 @@
 import styles from "./WatchCard.module.css";
-function WatchCard({ watch }) {
+export default function WatchCard({ watch }) {
   const { brand, model, price, image } = watch;
 
   return (
@@ -12,5 +12,3 @@ function WatchCard({ watch }) {
     </article>
   );
 }
-
-export default WatchCard;
